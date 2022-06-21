@@ -1,0 +1,120 @@
+# Site Settings #
+title: "Siena Guerrero"
+name: "Siena Maria Guerrero"
+location: "Los Angeles"
+slogan: "Tech Enthusiast, Software Engineer"
+# Use a maximum of 150 characters for SEO-purposes.
+description: Personal website for Siena Guerrero. Digital designer, tinkerer, and lover of coding. Software Engineer at Handshake, former Software Engineer at Swoop. Computer Science Major (indefinitely paused!) at Harvey Mudd College.`
+
+# Main author of the website
+author: sienaguerrero
+email: hello@sienaguerrero.com
+
+# Resume
+resumeLink: "https://github.com/sienaguerrero/by-the-marina-gatsby-website/raw/gh-pages/downloads/SienaGuerrero-Resume.pdf"
+
+# Social media links
+socialMedia:
+  instagram: sienaguerrero
+  linkedin: sienaguerrero
+  github: sienaguerrero
+
+# 'Many Thanks' section in footer
+manyThanks:
+  - item:
+      - text: "Favicons by Teresa Ibarra"
+      - url: "http://teresaibarra.github.io/"
+  - item:
+      - text: "Personal Icon by Lydia Amora"
+      - url: "https://twitter.com/lydiaamora"
+
+# Contact page
+overline: DIGITAL DESIGNER, TINKERER, AND LOVER OF CODING
+heading:
+  title: Contact Me
+  image_fullwidth: "/headers/header_pier.jpg"
+subheading: Software engineer passionate about powerful, efficient, and elegant design.
+about-me:
+  - item: item 1
+  - item: item 2
+  - item: item 3
+contact-me: "Check out my resume and [send me an email](mailto: hello@sienaguerrero.com) for inquiries."
+
+# My story
+academic-interests:
+  - item: Human-Computer Interactions
+  - item: Socially Assistive Robots
+  - item: Computer Vision
+  - item: Artiﬁcial Intelligence
+  - item: UI/UX Design
+  - item: Cybersecurity
+personal-facts:
+  - item: Lived in 6 different US states
+  - item: Attend 3 different high schools
+  - item: Lived abroad (Japan) while father served in military
+my-timeline:
+  - item:
+      - year: March 1997
+      - summary: Born in Corpus Christi, Texas.
+  - item:
+      - year: 1999
+      - summary: Moved to Edmond, Oklahoma.
+  - item:
+      - year: 2003
+      - summary: Moved to Okinawa, Japan.
+  - item:
+      - year: 2004
+      - summary: Discovered Neopets, launching my interest in the internet and building websites. Made my first site on Geocities for displaying my pixel art.
+  - item:
+      - year: 2007
+      - summary: Moved to Albuquerque, New Mexico.
+  - item:
+      - year: 2010
+      - summary: Took first formal programming classes in Java and C++ during the summer.
+  - item:
+      - year: 2012
+      - summary: Moved to Macon, Georgia.
+  - item:
+      - year: 2014
+      - summary: Moved to Burke, Virginia.
+  - item:
+      - year: 2015
+      - summary: Graduated from High School. Took a gap year after committing to Harvey Mudd College.
+  - item:
+      - year: 2016
+      - summary: Traveled to Ecuador, my grandparents’ homeland. Started college at Harvey Mudd College. Learned Python.
+  - item:
+      - year: 2017
+      - summary: Ruby, my Goldendoodle, was born. Declared major in Computer Science.
+  - item:
+      - year: 2018
+      - summary: Completed Mudd Wellness Greenhouse Project.
+  - item:
+      - year: 2019
+      - summary: Developed web app with team during Spring. Built personal website 1.0 in summer. Began interning at Swoop, at seed stage startup in Los Angeles.
+  - item:
+      - year: March 2019
+      - summary: Started working full-time as a Software Engineer at Swoop.
+  - item:
+      - year: 2020
+      - summary: Started building Hippokampus, a personal note/reminder app.
+  - item:
+      - year: 2021
+      - summary: Started building personal website 2.0.
+  - item:
+      - year: February 2022
+      - summary: Started building Plantae, a personal plant diary app.
+  - item:
+      - year: March 2022
+      - summary: Started working full-time as a Software Engineer at Handshake.
+
+developers-who-inspire-me:
+  - item:
+      - name: Tania Rascia
+      - link: https://www.taniarascia.com
+  - item:
+      - name: Radon Rasborough
+      - link: https://intuitiveexplanations.com
+  - item:
+      - name: Chris Beams
+      - link: https://chris.beams.io/
