@@ -1,4 +1,6 @@
 import * as React from "react";
+import Head from "next/head";
+import Image from "next/image";
 
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -11,8 +13,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 
-import YAMLData from "../content/_config.yaml";
-import sienaAndRubyImage from "../images/ruby-and-siena.jpg";
+import YAMLData from "../src/content/_config.yaml";
+import sienaAndRubyImage from "../src/images/ruby-and-siena.jpg";
 import { IconButton, Link, Typography } from "@mui/material";
 
 export default function IndexPage() {
@@ -21,6 +23,10 @@ export default function IndexPage() {
 
   return (
     <>
+      <Head>
+        <title>Siena's Personal Site</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Container maxWidth="lg">
         <Box sx={{ my: 1.5 }}>
           <Container maxWidth="md">
@@ -77,14 +83,17 @@ export default function IndexPage() {
 
                 <Box
                   p={1}
-                  component="img"
-                  src={sienaAndRubyImage}
                   sx={{
                     border: `1px solid ${theme.palette.primary.main}`,
-                    width: "220px",
-                    height: "220px",
                   }}
-                />
+                >
+                  <Image
+                    src={sienaAndRubyImage}
+                    alt="Picture of the author"
+                    width={220}
+                    height={220}
+                  />
+                </Box>
 
                 <Box
                   mt={1}

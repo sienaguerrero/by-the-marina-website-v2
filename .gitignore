@@ -1,0 +1,7 @@
+# by the marina theme
+by-the-marina-theme/node_modules/
+by-the-marina-theme/.cache/
+by-the-marina-theme/public
+
+# OSX
+.DS_Store
