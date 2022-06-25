@@ -16,13 +16,14 @@ import EmailIcon from "@mui/icons-material/Email";
 import YAMLData from "../src/content/_config.yaml";
 import sienaAndRubyImage from "../src/images/ruby-and-siena.jpg";
 import { IconButton, Link, Typography } from "@mui/material";
+import Layout from "../src/by-the-marina-theme/components/layout/Layout";
 
 export default function IndexPage() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <>
+    <Layout>
       <Head>
         <title>Siena's Personal Site</title>
         <link rel="icon" href="/favicon.ico" />
@@ -173,6 +174,6 @@ export default function IndexPage() {
           </Container>
         </Box>
       </Container>
-    </>
+    </Layout>
   );
 }

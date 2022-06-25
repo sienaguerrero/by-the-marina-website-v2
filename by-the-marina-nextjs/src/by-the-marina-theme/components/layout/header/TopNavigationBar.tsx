@@ -1,5 +1,5 @@
 import React from "react";
-import { navigate } from "gatsby";
+import { useRouter } from "next/router";
 
 import {
   AppBar,
@@ -25,9 +25,9 @@ import YAMLData from "../../../../content/_config.yaml";
 
 import { useScreenSize } from "../../../hooks/useScreenSize";
 
-import { ColorModeContext } from "../../../../../plugins/gatsby-plugin-top-layout/useAppTheme";
+import { ColorModeContext } from "../../../hooks/useAppTheme";
 import NavigationBarLink from "../navigation/NavigationBarLink";
-import { white } from "../../../../theme";
+import { white } from "../../../theme";
 
 export const TOP_BAR_HEIGHT_MOBILE = 56;
 export const TOP_BAR_HEIGHT_DESKTOP = 78;
@@ -50,6 +50,7 @@ function TopNavigationBar() {
   // state
   const { isMobileView } = useScreenSize();
   const theme = useTheme();
+  const router = useRouter();
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -60,6 +61,10 @@ function TopNavigationBar() {
   };
   const handleClose = () => {
     setAnchorEl(null);
+  };
+  const handleHomeRedirectClick = (e) => {
+    e.preventDefault();
+    router.push("/");
   };
 
   const resumeLink = YAMLData.resumeLink;
@@ -98,7 +103,7 @@ function TopNavigationBar() {
                     spacing={{ xs: 0.5, sm: 1, md: 2 }}
                     sx={{ alignItems: "center" }}
                   >
-                    <ButtonBase onClick={() => navigate("/")}>
+                    <ButtonBase onClick={handleHomeRedirectClick}>
                       <Box mr={1}>
                         <TurquoiseNMHeart
                           color={theme.palette.primary.main}
@@ -199,7 +204,7 @@ function TopNavigationBar() {
                       </IconButton>
                     </Tooltip>
                   </Box>
-                  <ButtonBase onClick={() => navigate("/")}>
+                  <ButtonBase onClick={handleHomeRedirectClick}>
                     <Typography
                       sx={{ fontFamily: "Pacifico", fontSize: 24 }}
                       color="primary"
@@ -227,7 +232,7 @@ function TopNavigationBar() {
                   <NavigationBarLink linkTo="/contact" linkText="Contact" />
 
                   <Box p={1} mr={1}>
-                    <ButtonBase onClick={() => navigate("/")}>
+                    <ButtonBase onClick={handleHomeRedirectClick}>
                       <TurquoiseNMHeart
                         color={theme.palette.primary.main}
                         height={60}

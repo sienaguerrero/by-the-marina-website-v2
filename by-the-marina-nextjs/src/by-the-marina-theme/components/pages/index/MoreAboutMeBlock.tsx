@@ -1,18 +1,18 @@
 import React from "react";
 
-import { Box, useTheme } from "@mui/material/";
-import { useScreenSize } from "../../../hooks/useScreenSize";
-import { black, white } from "../../../../theme";
+import { useTheme } from "@mui/material/";
+//import { useScreenSize } from "../../../hooks/useScreenSize";
 
 type ImageHeaderProps = {};
 
 function MoreAboutMeBlock(props: ImageHeaderProps) {
   const {} = props;
 
-  const { isMobileView } = useScreenSize();
+  //const { isMobileView } = useScreenSize();
   const theme = useTheme();
+  console.log(theme);
 
-  const isDarkMode = theme.palette.mode === "dark";
+  //const isDarkMode = theme.palette.mode === "dark";
 
   return <></>;
 }

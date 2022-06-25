@@ -6,7 +6,7 @@ import {
   Link,
   Paper,
   Typography,
-  useTheme,
+  //useTheme,
 } from "@mui/material";
 
 // images
@@ -17,7 +17,7 @@ import ImageHeaderLayout from "../by-the-marina-theme/components/layout/ImageHea
 import ProjectCard from "../by-the-marina-theme/components/pages/projects/ProjectCard";
 
 export default function ProjectsPage() {
-  const theme = useTheme();
+  //const theme = useTheme();
 
   const imageCaption =
     "Flowering succulent in Newbury Park, CA during Summer 2018.";

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import {
   Box,
@@ -73,14 +74,17 @@ export default function AboutPage() {
                     >
                       <Box
                         p={1}
-                        component="img"
-                        src={sienaDigitalPortrait}
                         sx={{
                           border: `1px solid ${theme.palette.primary.main}`,
-                          width: "220px",
-                          height: "220px",
                         }}
-                      />
+                      >
+                        <Image
+                          src={sienaDigitalPortrait}
+                          alt="Picture of the author"
+                          width={220}
+                          height={220}
+                        />
+                      </Box>
 
                       <Box
                         mt={1}

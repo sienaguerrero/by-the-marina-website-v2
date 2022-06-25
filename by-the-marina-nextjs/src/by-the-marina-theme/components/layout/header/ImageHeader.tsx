@@ -1,11 +1,12 @@
 import React from "react";
+import { StaticImageData } from "next/image";
 
 import { Box, Typography, useTheme } from "@mui/material/";
 import { useScreenSize } from "../../../hooks/useScreenSize";
-import { black, white } from "../../../../theme";
+import { black, white } from "../../../theme";
 
 type ImageHeaderProps = {
-  imageSrc: string;
+  imageSrc: string | StaticImageData;
   imageAltTitle: string;
   imageCaption: string;
   imageOverlayText?: string;

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Box, Typography, useTheme } from "@mui/material/";
-import { useScreenSize } from "../../../hooks/useScreenSize";
+//import { useScreenSize } from "../../../hooks/useScreenSize";
 
 type ProjectCardProps = {
   projectName: string;
@@ -12,10 +12,11 @@ type ProjectCardProps = {
 function ProjectCard(props: ProjectCardProps) {
   const { projectName, projectDescription, endNote } = props;
 
-  const { isMobileView } = useScreenSize();
+  //const { isMobileView } = useScreenSize();
   const theme = useTheme();
 
   const isDarkMode = theme.palette.mode === "dark";
+  console.log(isDarkMode);
 
   return (
     <Box

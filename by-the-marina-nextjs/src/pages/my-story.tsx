@@ -87,7 +87,7 @@ export default function AboutPage() {
               border: `1px solid ${theme.palette.primary.light}`,
             }}
           >
-            {YAMLData["personal-facts"].map((data, i) => {
+            {YAMLData["personal-facts"].map((data) => {
               return <Typography>* {data.item}</Typography>;
             })}
           </Box>
@@ -106,7 +106,7 @@ export default function AboutPage() {
           >
             {YAMLData["my-timeline"].map((data, i) => {
               return (
-                <Box>
+                <Box key={i}>
                   <Typography display="inline" sx={{ fontWeight: "bold" }}>
                     {data.item[0].year}
                   </Typography>
