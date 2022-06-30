@@ -22,10 +22,12 @@ export default function IndexPage() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
+  const siteTitle = `Siena&apos;s Personal Site`;
+
   return (
     <Layout>
       <Head>
-        <title>Siena's Personal Site</title>
+        <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container maxWidth="lg">
@@ -139,7 +141,7 @@ export default function IndexPage() {
                 </Box>
 
                 <Typography sx={{ mb: 1 }}>
-                  I'm a Software Engineer on the Platform Services team at{" "}
+                  I&apos;m a Software Engineer on the Platform Services team at{" "}
                   <Link href="https://joinhandshake.com/">Handshake</Link>, an
                   organization that shares my passion for democratizing
                   opportunity.
