@@ -13,8 +13,6 @@ import {
 import headerImage from "../by-the-marina-theme/assets/jpg/banners/headers/header_purple-flower.jpg";
 
 // components
-import ImageHeaderLayout from "../by-the-marina-theme/components/layout/ImageHeaderLayout";
-import ProjectCard from "../by-the-marina-theme/components/pages/projects/ProjectCard";
 
 export default function ProjectsPage() {
   //const theme = useTheme();
@@ -140,13 +138,13 @@ export default function ProjectsPage() {
           <Box display="flex" flexWrap="wrap" justifyContent="space-between">
             {projects
               .filter((project) => project.type === "Major Project")
-              ?.map((project) => {
+              ?.map((project, i) => {
                 const projectName = project.projectName;
                 const projectDescription = project.projectDescription;
                 const projectEndNote = project.endNote;
 
                 return (
-                  <Box p={1} flex={1}>
+                  <Box p={1} flex={1} key={i}>
                     <ProjectCard
                       projectName={projectName}
                       projectDescription={projectDescription}
@@ -165,13 +163,13 @@ export default function ProjectsPage() {
           <Box display="flex" flexWrap="wrap" justifyContent="space-between">
             {projects
               .filter((project) => project.type === "Minor Project")
-              ?.map((project) => {
+              ?.map((project, i) => {
                 const projectName = project.projectName;
                 const projectDescription = project.projectDescription;
                 const projectEndNote = project.endNote;
 
                 return (
-                  <Box p={1} flex={1}>
+                  <Box p={1} flex={1} key={i}>
                     <ProjectCard
                       projectName={projectName}
                       projectDescription={projectDescription}
@@ -194,13 +192,13 @@ export default function ProjectsPage() {
                   project.type === "Academic Writing" ||
                   project.type === "Other Project"
               )
-              ?.map((project) => {
+              ?.map((project, i) => {
                 const projectName = project.projectName;
                 const projectDescription = project.projectDescription;
                 const projectEndNote = project.endNote;
 
                 return (
-                  <Box p={1} flex={1}>
+                  <Box p={1} flex={1} key={i}>
                     <ProjectCard
                       projectName={projectName}
                       projectDescription={projectDescription}

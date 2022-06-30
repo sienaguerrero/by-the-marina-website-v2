@@ -15,7 +15,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import YAMLData from "../content/_config.yaml";
 import headerImage from "../by-the-marina-theme/assets/jpg/banners/headers/header_ecuador.jpg";
-import ImageHeaderLayout from "../by-the-marina-theme/components/layout/ImageHeaderLayout";
+import ImageHeaderLayout from "../src/by-the-marina-theme/components/layout/ImageHeaderLayout";
 
 // https://intuitiveexplanations.com/
 // https://www.taniarascia.com/
@@ -87,8 +87,8 @@ export default function AboutPage() {
               border: `1px solid ${theme.palette.primary.light}`,
             }}
           >
-            {YAMLData["personal-facts"].map((data) => {
-              return <Typography>* {data.item}</Typography>;
+            {YAMLData["personal-facts"].map((data, i) => {
+              return <Typography key={i}>* {data.item}</Typography>;
             })}
           </Box>
         </Paper>
