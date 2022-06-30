@@ -16,7 +16,7 @@ function NavigationBarLink(props: NavigationBarLinkType) {
     <Box p={0.5}>
       <Typography variant="button">
         <Link
-          to={linkTo}
+          href={linkTo}
           color="primary"
           {...(download && { download, target: "_blank" })}
         >
