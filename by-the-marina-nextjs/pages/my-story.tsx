@@ -13,8 +13,8 @@ import {
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-import YAMLData from "../content/_config.yaml";
-import headerImage from "../by-the-marina-theme/assets/jpg/banners/headers/header_ecuador.jpg";
+import YAMLData from "../src/content/_config.yaml";
+import headerImage from "../src/by-the-marina-theme/assets/jpg/banners/headers/header_ecuador.jpg";
 import ImageHeaderLayout from "../src/by-the-marina-theme/components/layout/ImageHeaderLayout";
 
 // https://intuitiveexplanations.com/
