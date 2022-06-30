@@ -10,7 +10,9 @@ import {
 } from "@mui/material";
 
 // images
-import headerImage from "../by-the-marina-theme/assets/jpg/banners/headers/header_purple-flower.jpg";
+import headerImage from "../src/by-the-marina-theme/assets/jpg/banners/headers/header_purple-flower.jpg";
+import ImageHeaderLayout from "../src/by-the-marina-theme/components/layout/ImageHeaderLayout";
+import ProjectCard from "../src/by-the-marina-theme/components/pages/projects/ProjectCard";
 
 // components
 
