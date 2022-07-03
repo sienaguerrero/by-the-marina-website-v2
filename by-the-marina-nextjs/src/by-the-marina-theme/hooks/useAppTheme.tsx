@@ -34,7 +34,6 @@ function useAppTheme() {
 
   // Update the theme only if the mode changes
   const appTheme = React.useMemo(() => {
-    console.log("change");
     const theme = createTheme({
       typography: {
         fontFamily: "Roboto",

@@ -16,7 +16,6 @@ function ProjectCard(props: ProjectCardProps) {
   const theme = useTheme();
 
   const isDarkMode = theme.palette.mode === "dark";
-  console.log(isDarkMode);
 
   return (
     <Box

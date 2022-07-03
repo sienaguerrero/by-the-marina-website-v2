@@ -10,7 +10,6 @@ function MoreAboutMeBlock(props: ImageHeaderProps) {
 
   //const { isMobileView } = useScreenSize();
   const theme = useTheme();
-  console.log(theme);
 
   //const isDarkMode = theme.palette.mode === "dark";
 
