@@ -3,7 +3,6 @@ import React, { ReactNode } from "react";
 import { Box } from "@mui/material/";
 import TopNavigationBar from "./header/TopNavigationBar";
 import Footer from "./footer/Footer";
-import ThemeWrapper from "./ThemeWrapper";
 
 type LayoutProps = {
   children: ReactNode;
