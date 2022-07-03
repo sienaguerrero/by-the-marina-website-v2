@@ -17,18 +17,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           name="viewport"
           content="minimum-scale=1 initial-scale=1, width=device-width"
         />
-        <link
-          href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Pacifico:300,400,500,700&display=swap"
-        />
       </Head>
 
       <ColorModeContext.Provider value={colorMode}>
