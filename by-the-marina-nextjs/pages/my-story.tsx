@@ -27,7 +27,10 @@ export default function AboutPage() {
     "On the road to Alausí, Ecuador, where my abuela was born.";
 
   return (
-    <ImageHeaderLayout headerImage={headerImage} imageCaption={imageCaption}>
+    <ImageHeaderLayout
+      headerImage={headerImage.src}
+      imageCaption={imageCaption}
+    >
       <Container maxWidth="lg">
         <Paper variant="outlined" sx={{ my: 1, p: 1 }}>
           <Typography variant="h3" sx={{ mb: 1 }}>

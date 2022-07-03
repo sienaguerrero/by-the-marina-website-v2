@@ -36,7 +36,7 @@ export default function AboutPage() {
   return (
     <>
       <ImageHeader
-        imageSrc={headerImage}
+        imageSrc={headerImage.src}
         imageAltTitle=""
         imageCaption={imageCaption}
         imageOverlayText={YAMLData.name}
