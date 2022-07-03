@@ -25,7 +25,7 @@ export default function IndexPage() {
   const siteTitle = `Siena&apos;s Personal Site`;
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -176,6 +176,6 @@ export default function IndexPage() {
           </Container>
         </Box>
       </Container>
-    </Layout>
+    </>
   );
 }
