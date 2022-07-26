@@ -96,10 +96,10 @@ function Footer() {
             Created with &hearts; by{" "}
             <Link href="https://github.com/sienaguerrero">sienaguerrero</Link>{" "}
             with{" "}
-            <Link href="https://www.gatsbyjs.com/" target="_blank">
-              Gatsby
+            <Link href="https://nextjs.org/" target="_blank">
+              Next.js
             </Link>{" "}
-            using <Link href="https://mui.com/">MUI</Link>.
+            using <Link href="https://mui.com/">MUI React components</Link>.
           </Typography>
 
           <Stack direction="row" spacing={2}>
