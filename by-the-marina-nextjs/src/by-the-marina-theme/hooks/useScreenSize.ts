@@ -1,5 +1,5 @@
 import { useMediaQuery } from "@mui/material";
-import { useAppTheme } from "../../../plugins/gatsby-plugin-top-layout/useAppTheme";
+import { useAppTheme } from "../hooks/useAppTheme";
 
 function useScreenSize() {
   const { appTheme } = useAppTheme();

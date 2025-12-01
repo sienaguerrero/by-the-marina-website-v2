@@ -1,4 +1,6 @@
 import * as React from "react";
+import Head from "next/head";
+import Image from "next/image";
 
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -11,16 +13,23 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 
-import YAMLData from "../content/_config.yaml";
-import sienaAndRubyImage from "../images/ruby-and-siena.jpg";
+import YAMLData from "../src/content/_config.yaml";
+import sienaAndRubyImage from "../src/images/ruby-and-siena.jpg";
 import { IconButton, Link, Typography } from "@mui/material";
+import Layout from "../src/by-the-marina-theme/components/layout/Layout";
 
 export default function IndexPage() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
+  const siteTitle = `Siena&apos;s Personal Site`;
+
   return (
     <>
+      <Head>
+        <title>{siteTitle}</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Container maxWidth="lg">
         <Box sx={{ my: 1.5 }}>
           <Container maxWidth="md">
@@ -77,14 +86,17 @@ export default function IndexPage() {
 
                 <Box
                   p={1}
-                  component="img"
-                  src={sienaAndRubyImage}
                   sx={{
                     border: `1px solid ${theme.palette.primary.main}`,
-                    width: "220px",
-                    height: "220px",
                   }}
-                />
+                >
+                  <Image
+                    src={sienaAndRubyImage}
+                    alt="Picture of the author"
+                    width={220}
+                    height={220}
+                  />
+                </Box>
 
                 <Box
                   mt={1}
@@ -129,7 +141,7 @@ export default function IndexPage() {
                 </Box>
 
                 <Typography sx={{ mb: 1 }}>
-                  I'm a Software Engineer on the Platform Services team at{" "}
+                  I&apos;m a Software Engineer on the Platform Services team at{" "}
                   <Link href="https://joinhandshake.com/">Handshake</Link>, an
                   organization that shares my passion for democratizing
                   opportunity.

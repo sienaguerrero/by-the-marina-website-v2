@@ -6,18 +6,18 @@ import {
   Link,
   Paper,
   Typography,
-  useTheme,
+  //useTheme,
 } from "@mui/material";
 
 // images
-import headerImage from "../by-the-marina-theme/assets/jpg/banners/headers/header_purple-flower.jpg";
+import headerImage from "../src/by-the-marina-theme/assets/jpg/banners/headers/header_purple-flower.jpg";
+import ImageHeaderLayout from "../src/by-the-marina-theme/components/layout/ImageHeaderLayout";
+import ProjectCard from "../src/by-the-marina-theme/components/pages/projects/ProjectCard";
 
 // components
-import ImageHeaderLayout from "../by-the-marina-theme/components/layout/ImageHeaderLayout";
-import ProjectCard from "../by-the-marina-theme/components/pages/projects/ProjectCard";
 
 export default function ProjectsPage() {
-  const theme = useTheme();
+  //const theme = useTheme();
 
   const imageCaption =
     "Flowering succulent in Newbury Park, CA during Summer 2018.";
@@ -131,7 +131,10 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <ImageHeaderLayout headerImage={headerImage} imageCaption={imageCaption}>
+    <ImageHeaderLayout
+      headerImage={headerImage.src}
+      imageCaption={imageCaption}
+    >
       <Container maxWidth="lg">
         <Paper variant="outlined" sx={{ my: 1, p: 1 }}>
           <Typography variant="h3" sx={{ mb: 1 }}>
@@ -140,13 +143,13 @@ export default function ProjectsPage() {
           <Box display="flex" flexWrap="wrap" justifyContent="space-between">
             {projects
               .filter((project) => project.type === "Major Project")
-              ?.map((project) => {
+              ?.map((project, i) => {
                 const projectName = project.projectName;
                 const projectDescription = project.projectDescription;
                 const projectEndNote = project.endNote;
 
                 return (
-                  <Box p={1} flex={1}>
+                  <Box p={1} flex={1} key={i}>
                     <ProjectCard
                       projectName={projectName}
                       projectDescription={projectDescription}
@@ -165,13 +168,13 @@ export default function ProjectsPage() {
           <Box display="flex" flexWrap="wrap" justifyContent="space-between">
             {projects
               .filter((project) => project.type === "Minor Project")
-              ?.map((project) => {
+              ?.map((project, i) => {
                 const projectName = project.projectName;
                 const projectDescription = project.projectDescription;
                 const projectEndNote = project.endNote;
 
                 return (
-                  <Box p={1} flex={1}>
+                  <Box p={1} flex={1} key={i}>
                     <ProjectCard
                       projectName={projectName}
                       projectDescription={projectDescription}
@@ -194,13 +197,13 @@ export default function ProjectsPage() {
                   project.type === "Academic Writing" ||
                   project.type === "Other Project"
               )
-              ?.map((project) => {
+              ?.map((project, i) => {
                 const projectName = project.projectName;
                 const projectDescription = project.projectDescription;
                 const projectEndNote = project.endNote;
 
                 return (
-                  <Box p={1} flex={1}>
+                  <Box p={1} flex={1} key={i}>
                     <ProjectCard
                       projectName={projectName}
                       projectDescription={projectDescription}

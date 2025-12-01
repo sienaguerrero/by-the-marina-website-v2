@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import {
   Box,
@@ -15,12 +16,12 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 
-import ImageHeader from "../by-the-marina-theme/components/layout/header/ImageHeader";
-import headerImage from "../by-the-marina-theme/assets/jpg/banners/headers/header_ca-coast-ocean.jpg";
+import headerImage from "../src/by-the-marina-theme/assets/jpg/banners/headers/header_ca-coast-ocean.jpg";
 
-import sienaDigitalPortrait from "../images/img-siena-digital-portrait.jpg";
+import sienaDigitalPortrait from "../src/images/img-siena-digital-portrait.jpg";
 
-import YAMLData from "../content/_config.yaml";
+import YAMLData from "../src/content/_config.yaml";
+import ImageHeader from "../src/by-the-marina-theme/components/layout/header/ImageHeader";
 // https://intuitiveexplanations.com/
 // https://www.taniarascia.com/
 // https://carolchen.me
@@ -35,7 +36,7 @@ export default function AboutPage() {
   return (
     <>
       <ImageHeader
-        imageSrc={headerImage}
+        imageSrc={headerImage.src}
         imageAltTitle=""
         imageCaption={imageCaption}
         imageOverlayText={YAMLData.name}
@@ -73,14 +74,17 @@ export default function AboutPage() {
                     >
                       <Box
                         p={1}
-                        component="img"
-                        src={sienaDigitalPortrait}
                         sx={{
                           border: `1px solid ${theme.palette.primary.main}`,
-                          width: "220px",
-                          height: "220px",
                         }}
-                      />
+                      >
+                        <Image
+                          src={sienaDigitalPortrait}
+                          alt="Picture of the author"
+                          width={220}
+                          height={220}
+                        />
+                      </Box>
 
                       <Box
                         mt={1}

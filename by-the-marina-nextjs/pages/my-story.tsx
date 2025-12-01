@@ -13,9 +13,9 @@ import {
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-import YAMLData from "../content/_config.yaml";
-import headerImage from "../by-the-marina-theme/assets/jpg/banners/headers/header_ecuador.jpg";
-import ImageHeaderLayout from "../by-the-marina-theme/components/layout/ImageHeaderLayout";
+import YAMLData from "../src/content/_config.yaml";
+import headerImage from "../src/by-the-marina-theme/assets/jpg/banners/headers/header_ecuador.jpg";
+import ImageHeaderLayout from "../src/by-the-marina-theme/components/layout/ImageHeaderLayout";
 
 // https://intuitiveexplanations.com/
 // https://www.taniarascia.com/
@@ -27,7 +27,10 @@ export default function AboutPage() {
     "On the road to Alausí, Ecuador, where my abuela was born.";
 
   return (
-    <ImageHeaderLayout headerImage={headerImage} imageCaption={imageCaption}>
+    <ImageHeaderLayout
+      headerImage={headerImage.src}
+      imageCaption={imageCaption}
+    >
       <Container maxWidth="lg">
         <Paper variant="outlined" sx={{ my: 1, p: 1 }}>
           <Typography variant="h3" sx={{ mb: 1 }}>
@@ -88,7 +91,7 @@ export default function AboutPage() {
             }}
           >
             {YAMLData["personal-facts"].map((data, i) => {
-              return <Typography>* {data.item}</Typography>;
+              return <Typography key={i}>* {data.item}</Typography>;
             })}
           </Box>
         </Paper>
@@ -106,7 +109,7 @@ export default function AboutPage() {
           >
             {YAMLData["my-timeline"].map((data, i) => {
               return (
-                <Box>
+                <Box key={i}>
                   <Typography display="inline" sx={{ fontWeight: "bold" }}>
                     {data.item[0].year}
                   </Typography>
