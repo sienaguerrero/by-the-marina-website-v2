@@ -36,7 +36,7 @@ const TurquoiseNMHeart = (props: TurquoiseNMHeartProps) => {
         <clipPath id="_clip1">
           <rect x="8.41" y="97.366" width="477.448" height="420.746" />
         </clipPath>
-        <g clip-path="url(#_clip1)">
+        <g clipPath="url(#_clip1)">
           <g transform="matrix(1,0,0,1,-149.59,0.36622)">
             <g transform="matrix(1,0,0,1,-82.1114,-41.5367)">
               <path
