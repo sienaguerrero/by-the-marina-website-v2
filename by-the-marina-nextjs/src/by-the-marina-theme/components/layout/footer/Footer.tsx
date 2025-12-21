@@ -18,7 +18,6 @@ import { useScreenSize } from "../../../hooks/useScreenSize";
 import yamlData from "../../../../content/_config.yaml";
 
 import Copyright from "./Copyright";
-//import KofiButton from "../KofiButton";
 
 export const FOOTER_HEIGHT_MOBILE = 56;
 export const FOOTER_HEIGHT_DESKTOP = 78;
@@ -117,13 +116,6 @@ function Footer() {
               <EmailIcon />
             </IconButton>
           </Stack>
-
-          {/* <KofiButton
-            title={"Support Me on Ko-fi"}
-            color={theme.palette.primary.main}
-            kofiID={"S6S8WFPN"}
-            textColor={theme.palette.primary.contrastText}
-          /> */}
         </Box>
       </Paper>
       <Copyright />
