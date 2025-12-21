@@ -22,7 +22,7 @@ export default function IndexPage() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-  const siteTitle = `Siena&apos;s Personal Site`;
+  const siteTitle = "Siena\'s Personal Site";
 
   return (
     <>
@@ -141,7 +141,7 @@ export default function IndexPage() {
                 </Box>
 
                 <Typography sx={{ mb: 1 }}>
-                  I&apos;m a Software Engineer on the Platform Services team at{" "}
+                  I&apos;m a Software Engineer on the Growth team Platform Services team at{" "}
                   <Link href="https://joinhandshake.com/">Handshake</Link>, an
                   organization that shares my passion for democratizing
                   opportunity.
