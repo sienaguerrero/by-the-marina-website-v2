@@ -52,7 +52,7 @@ function Footer() {
             <Box>
               <Typography>
                 Hosted on{" "}
-                <Link href="https://pages.github.com">Github Pages,</Link>{" "}
+                <Link href="https://vercel.com">Vercel,</Link>{" "}
                 maintained on Github.
                 {/* <Link href="https://github.com/sienaguerrero/website">
                   Github.{" "}
