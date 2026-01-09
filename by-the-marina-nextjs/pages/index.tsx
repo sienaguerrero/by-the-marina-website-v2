@@ -141,16 +141,16 @@ export default function IndexPage() {
                 </Box>
 
                 <Typography sx={{ mb: 1 }}>
-                  I&apos;m a Software Engineer on the Growth team Platform Services team at{" "}
+                  I&apos;m a Software Engineer on the Growth team at{" "}
                   <Link href="https://joinhandshake.com/">Handshake</Link>, an
                   organization that shares my passion for democratizing
                   opportunity.
                 </Typography>
 
                 <Typography sx={{ mb: 1 }}>
-                  Before joining Handshake, I was a fullstack engineer at{" "}
+                  Before joining Handshake, I was a full-stack engineer at{" "}
                   <Link href="https://swoopapp.com/">Swoop, Inc.</Link> a really
-                  neat transportation startup based in Los Angeles. Before
+                  neat transportation startup based in Los Angeles, where I worked on Moovs. Before
                   entering the world of startups, I studied Computer Science for
                   three years at{" "}
                   <Link href="https://www.hmc.edu">Harvey Mudd College.</Link>
@@ -169,7 +169,7 @@ export default function IndexPage() {
                   >
                     send me an email
                   </Link>{" "}
-                  for inquiries.
+                  for inquiries. If you want to make me really happy, send me a poem about dogs.
                 </Typography>
               </Box>
             </Stack>
